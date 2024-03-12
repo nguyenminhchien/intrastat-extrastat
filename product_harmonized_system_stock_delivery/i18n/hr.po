@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* product_harmonized_system_delivery
+# 	* product_harmonized_system_stock_delivery
 #
 msgid ""
 msgstr ""
@@ -17,26 +17,26 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.14.1\n"
 
-#. module: product_harmonized_system_delivery
-#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_product__hs_code
-#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_template__hs_code
+#. module: product_harmonized_system_stock_delivery
+#: model:ir.model.fields,field_description:product_harmonized_system_stock_delivery.field_product_product__hs_code
+#: model:ir.model.fields,field_description:product_harmonized_system_stock_delivery.field_product_template__hs_code
 msgid "HS Code"
 msgstr "HS Šifra"
 
-#. module: product_harmonized_system_delivery
-#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_product__country_of_origin
-#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_template__country_of_origin
+#. module: product_harmonized_system_stock_delivery
+#: model:ir.model.fields,field_description:product_harmonized_system_stock_delivery.field_product_product__country_of_origin
+#: model:ir.model.fields,field_description:product_harmonized_system_stock_delivery.field_product_template__country_of_origin
 msgid "Origin of Goods"
 msgstr "Porijeklo robe"
 
-#. module: product_harmonized_system_delivery
-#: model:ir.model,name:product_harmonized_system_delivery.model_product_template
+#. module: product_harmonized_system_stock_delivery
+#: model:ir.model,name:product_harmonized_system_stock_delivery.model_product_template
 msgid "Product"
 msgstr "Proizvod"
 
-#. module: product_harmonized_system_delivery
-#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_product__country_of_origin
-#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_template__country_of_origin
+#. module: product_harmonized_system_stock_delivery
+#: model:ir.model.fields,help:product_harmonized_system_stock_delivery.field_product_product__country_of_origin
+#: model:ir.model.fields,help:product_harmonized_system_stock_delivery.field_product_template__country_of_origin
 msgid ""
 "Rules of origin determine where goods originate, i.e. not where they have "
 "been shipped from, but where they have been produced or manufactured.\n"
@@ -47,9 +47,9 @@ msgstr ""
 "dopremljena, nego gdje je roba proizvedena. \n"
 "Ako takvo, 'Porijeklo' je 'Ekonomska nacionalnost' trgovačke robe."
 
-#. module: product_harmonized_system_delivery
-#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_product__hs_code
-#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_template__hs_code
+#. module: product_harmonized_system_stock_delivery
+#: model:ir.model.fields,help:product_harmonized_system_stock_delivery.field_product_product__hs_code
+#: model:ir.model.fields,help:product_harmonized_system_stock_delivery.field_product_template__hs_code
 msgid ""
 "Standardized code for international shipping and goods declaration. At the "
 "moment, only used for the FedEx shipping provider."
