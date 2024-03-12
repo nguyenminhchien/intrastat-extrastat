@@ -82,15 +82,12 @@ class HSCode(models.Model):
             code.product_tmpl_count = mapped_data.get(code.id, 0)
 
     @api.depends("local_code", "description")
-    def name_get(self):
-        res = []
-        for this in self:
-            name = this.local_code
-            if this.description:
-                name += " " + this.description
-            name = shorten(name, 55)
-            res.append((this.id, name))
-        return res
+    def _compute_display_name(self):
+        for rec in self:
+            name = rec.local_code
+            if rec.description:
+                name += " " + rec.description
+            rec.display_name = shorten(name, 55)
 
     _sql_constraints = [
         (
